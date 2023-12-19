@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- в момент нажатия на кнопку - onclick -->
+  <button onclick="alert('товар добавлен в корзину');" >Купить</button>
+<!-- ссылка закрыть диалог -->
+<a onclick="alert('Закрыть каталог');" href="#">Закрыть диалог</a>
+
+  <script>
+    // let userAnswer = prompt(`Зимой и летом одним цветом`);
+
+    // if (userAnswer.toLowerCase() === 'елка') {
+    //   alert(`Молодец`);
+    // } else {
+    //   alert(`Не угадал`);
+    // }
+
+    // 1. ТЕРНАРНЫЙ ОПЕРАТОР - (условие) ? ДА : НЕТ
+
+    //(userAnswer === 'елка') ? alert(`Молодец`) : alert(`Не угадал`)
+
+    // alert((userAnswer === 'елка') ? `Молодец` : `Не угадал`);
+
+    // 2. ТЕРНАРНЫЙ ОПЕРАТОР
+
+    let pass = Number(prompt('Введите пароль'));
+    alert((pass === 123) ? 'Проходим дальше' : 'Нельзя дальше');
+
+
+  </script>  
+</body>
+</html>
