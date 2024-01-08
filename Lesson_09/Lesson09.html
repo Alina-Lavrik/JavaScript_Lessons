@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Lesson09.js"></script>
+    <script>
+        const product = {
+            name: 'Table',
+            price: 15000,
+            count: 0,
+            userRegistered: false,
+            /*функция регистрации пользователя*/
+            registration: function () {
+                this.userRegistered = true;
+            },
+            countProduct: function() {
+               if (this.count > 0) {
+                console.log('Product is available for purchase');
+               } else {
+                console.log('Product is out of stock');
+               }
+            },
+            /* создаем метод покупка товара*/
+            buyProduct: function(){
+                /*проверка зарегистрирован ли пользователь*/
+                if (this.userRegistered) {
+                    console.log('Poduct is in the cart');
+                } else {
+                    console.log('You should register, at first do product.registration()');
+                }
+            }
+
+        }
+        product.buyProduct();
+        product.registration();
+        product.buyProduct();
+    </script>
+</body>
+</html>
